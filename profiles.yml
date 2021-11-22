@@ -1,17 +1,14 @@
-datawarehouse:
+Benz006:
   target: dev
   outputs:
     dev:
       type: postgres
       host: dev.cphyvekdk1wt.us-west-2.rds.amazonaws.com
       user: masteruser
-      password: Becker77
+      password: bryte123
       port: 5432
       dbname: dev
       schema: abc
       threads: 4
       keepalives_idle: 0 # default 0, indicating the system default
       connect_timeout: 10 # default 10 seconds
-      search_path: [optional, override the default postgres search_path]
-      role: [optional, set the role dbt assumes when executing queries]
-      sslmode: [optional, set the sslmode used to connect to the database]
