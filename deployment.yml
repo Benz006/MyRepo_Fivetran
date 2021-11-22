@@ -27,8 +27,8 @@ jobs:
      - name: run models
        command: dbt run
 
- - name: every05minutes
-   schedule: '*/05 * * * *' # The example will run every 05 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
+ - name: every50minutes
+   schedule: '*/50 * * * *' # The example will run every 50 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
    steps:
      - name: run models
        command: dbt run --models my_dbt_filter_test my_dbt_test_view
