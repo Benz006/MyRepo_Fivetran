@@ -33,7 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 #datawarehouse:    # Config indicated by + and applies to all files under models/example/
- models:
-   example:
-      +materialized: view
-      +materialized: table
+models:
+  example:
+    +materialized: view
+    +materialized: table
